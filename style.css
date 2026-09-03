@@ -1,0 +1,30 @@
+* {
+    text-align: center;
+}
+
+.Bloco-CadastrodeProduto h1 {
+    font-size: 40px;
+    font-weight: 850;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.Bloco-CadastrodeProduto button {
+    margin-top: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.Produtos-cadastrados{
+    font-weight: 650;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.Produtos-cadastrados .Item {
+    border: 1px solid black;
+    padding: 15px;
+}
