@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+
+.Bloco-CadastrodeProduto {
+    width: 100%;
+    margin: 10px;
+}
+
+.Bloco-CadastrodeProduto h1 {
+    font-size: 50px;
+    font-weight: 850;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 35px;
+}
+
+.Bloco-CadastrodeProduto .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Bloco-CadastrodeProduto p {
+    font-family: cursive;
+    margin-left: 50px;
+}
+
+.Bloco-CadastrodeProduto input {
+    padding: 10px 25px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.Bloco-CadastrodeProduto button {
+    margin: 20px 20px 45px;
+    padding: 10px 35px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Bloco-CadastrodeProduto button:hover {
+    transform: scale(1.01);
+}
+
+.Produtos-cadastrados.mostrar {
+    font-weight: 650;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+    width: 100%;
+    flex-direction: column;
+    border-radius: 60px;
+    border: 5px solid rgb(44, 204, 236);
+    overflow-wrap: break-word;
+    margin-top: 40px;
+}
+
+.Produtos-cadastrados.mostrar .Item{
+    border: 5px solid rgb(223, 236, 240);
+    padding: 30px;
+    border-radius: 40px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    overflow-wrap: break-word;
+    transition: transform 0.3s ease;
+}
+
+.Produtos-cadastrados.mostrar .Item:hover {
+    transform: scale(1.02) ;
+    box-shadow: 0px 0px 0px 4px rgb(32, 198, 231);
+}
+
+.Produtos-cadastrados.mostrar .Item h2 {
+    font-size: 20px;
+
+}
+
+.Produtos-cadastrados.mostrar .Item p {
+    width: 100%;
+    margin: 15px;
+}
+
+
+.Produtos-cadastrados.mostrar .Item .p2 {
+    color: rgb(6, 233, 59);
+    font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 1230px) {
+    .Bloco-CadastrodeProduto .container{
+        flex-direction: column;
+    }
+    .Bloco-CadastrodeProduto .container p{
+        margin-left: 0;
+    }
+
+    .Produtos-cadastrados .Item{
+        flex-direction: column;
+    }
+}
